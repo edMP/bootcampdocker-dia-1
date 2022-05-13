@@ -1,22 +1,23 @@
 # bootcampdocker-dia-1
-con docker pull httpd:latest descargamos la ultima imagen de httpd que exista en docker hub
+con docker pull httpd:latest descargamos la ultima imagen de httpd que exista en docker hub 
 
-docker hub repositorio de imagenes docker
+docker hub repositorio de imágenes docker 
 
-medainte docker build podemos crear nuestras propias imagenes con -t o --tag le daremos el nombre que queramos 
+mediante docker build podemos crear nuestras propias imágenes con -t o --tag le daremos el nombre que queramos 
 
-para ver las imagenes que temnemos creadas usaremos docker image ls
-si queremos borrar alguna usaremos rmi nombre de la imagen -f o --force si no no permite borarla, setiene que tener encuenta que si existe un contedor actibo que la user no podremos borrar la imagen 
+para ver las imágenes que tenemos creadas usaremos docker image ls
+si queremos borrar alguna usaremos rmi nombre de la imagen -f o --force si no permite borrarla, se tiene que tener en cuenta que si existe un contenedor activo que la use no podremos borrar la imagen 
 
-para crear un contendor que use una imagen empelaremos doceker run  con --name le pondremos un nombre a el contenedor de lo contrario docker le podnra el que quiera, -d nos permite levantarlo en segundo pano y por ultimo le tendremos que decir la imagen a utilizar quedaria algo como 
-docker run -d --name test httpd:latest tambien le podremos indicar en que peurto queremos que se elvante com 80:80 
-docker ps meutras los conendores actibos con -a dara una vista mas detallada
+para crear un contendor que use una imagen empelaremos doceker run con --name le pondremos un nombre a el contenedor de lo contrario docker le podrá el que quiera,
+-d nos permite levantarlo en segundo plano y por último le tendremos que decir la imagen a utilizar.
+Quedaría algo como docker run -d --name test httpd:latest
 
-docker stop y el nombre o el identificador detendra el contendor  
+Tambien le podremos indicar en que puerto queremos que se levante com 80:80 docker ps muestras los contendores activos con -a dara una vista más detallada 
 
-medainte un docker file poremos crear  una imagen personal con las opciones de arranque que queramos en estes caso
-es una imagen de httpd
-from httpd:latest
-que genera un index.html en la carpeta index.hmtl del conenedor(sino esta la crea) con un hola mundo 
-COPY ./index.html /home/devops/html/index.html
+docker stop y el nombre o el identificador detendrá el contendor 
 
+mediante un docker file podemos crear una imagen personal con las opciones de arranque que queramos en estes caso es una imagen de httpd from httpd:latest que genera un index.html en la carpeta index.hmtl del contenedor(sino esta la crea) con un hola mundo COPY ./index.html /home/devops/html/index.html 
+
+ 
+
+ 
