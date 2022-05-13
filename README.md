@@ -18,6 +18,9 @@ docker stop y el nombre o el identificador detendrá el contendor
 
 mediante un docker file podemos crear una imagen personal con las opciones de arranque que queramos en estes caso es una imagen de httpd from httpd:latest que genera un index.html en la carpeta index.hmtl del contenedor(sino esta la crea) con un hola mundo COPY ./index.html /home/devops/html/index.html 
 
+con docker inspect image nombreimagen podremos sacar informacion del contenido de la imgagen com las etiquetas internas, versiones, variables de entorno y mas datos de la misma
+
+de igual fomra docker inspect nombredelcontenedor nos dara informacion de este 
  
 
  
