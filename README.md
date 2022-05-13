@@ -14,3 +14,9 @@ docker ps meutras los conendores actibos con -a dara una vista mas detallada
 
 docker stop y el nombre o el identificador detendra el contendor  
 
+medainte un docker file poremos crear  una imagen personal con las opciones de arranque que queramos en estes caso
+es una imagen de httpd
+from httpd:latest
+que genera un index.html en la carpeta index.hmtl del conenedor(sino esta la crea) con un hola mundo 
+COPY ./index.html /home/devops/html/index.html
+
